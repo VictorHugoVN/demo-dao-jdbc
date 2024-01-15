@@ -3,6 +3,7 @@ package application;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program2 {
 	
@@ -14,6 +15,13 @@ public class Program2 {
 		Department newDep = new Department(null, "Music");
 		departmentDao.insert(newDep);
 		System.out.println("Inserted! New id = " + newDep.getId());
+		
+		System.out.println("=== TEST 2: Department findById ===");
+		Department department = departmentDao.findById(4);
+		System.out.println(department);
+		
+		System.out.println("\n=== TEST 3: Departemnt findAll ===");
+		
 		
 		
 	}
