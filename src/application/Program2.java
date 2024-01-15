@@ -28,6 +28,12 @@ public class Program2 {
 			System.out.println(obj);
 		}
 		
+		System.out.println("\n=== TEST 4: Department update ===");
+		department = departmentDao.findById(1);
+		department.setName("Food");
+		departmentDao.update(department);
+		System.out.println("Update completed!");
+		
 		
 		
 	}
