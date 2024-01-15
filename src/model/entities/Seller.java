@@ -29,7 +29,7 @@ public class Seller implements Serializable{
 		this.setDepartment(department);
 	}
 	
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	
